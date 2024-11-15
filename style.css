@@ -1,0 +1,613 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftHeader {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
+.leftHeader>p {
+    padding-left: 1.4rem;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-right: 2rem;
+}
+
+.rightHeader>img {
+    height: 18px;
+    width: 18px;
+    margin-right: 1rem;
+}
+
+.rightHeader>img:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.rightnav {
+    display: flex;
+    flex-direction: row;
+}
+
+.page {
+    margin-right: 1.2rem;
+}
+
+.page:hover {
+    color: rgb(173, 161, 161);
+    cursor: pointer;
+}
+
+.page>img {
+    height: 18px;
+    width: 18px;
+}
+
+.slider {
+    height: 100vh;
+    background-image: url(./images/bg/pexels-pixabay-50594.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+}
+
+.slider>h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.slider>p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.slider>button {
+    font-size: 1.4rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    background-color: rgba(255, 68, 0, 0.651);
+    color: white;
+}
+
+.slider>button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 68, 0, 0.849);
+    transform: scale(1.01);
+}
+
+.productsmain>h1 {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2.6rem;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productimage {
+    width: 20vw;
+    transition: transform 0.8s;
+}
+
+.productimage:hover {
+    transform: scale(1.02);
+}
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5,
+.product6,
+.product7,
+.product8 {
+    margin: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding: 1.6rem;
+    transition: transform 0.8s;
+}
+
+.product1:hover,
+.product2:hover,
+.product3:hover,
+.product4:hover,
+.product5:hover,
+.product6:hover,
+.product7:hover,
+.product8:hover {
+    transform: scale(1.05);
+}
+
+
+
+.product1>.content,
+.product2>.content,
+.product3>.content,
+.product4>.content,
+.product5>.content,
+.product5>.content,
+.product6>.content,
+.product7>.content,
+.product8>.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(54, 51, 51);
+
+}
+
+.content>.productname {
+    padding: .6rem;
+    font-size: 1.8rem;
+    color: rgba(32, 31, 31, 0.801);
+}
+
+.content>.price {
+    font-size: 1.5rem;
+    color: rgba(32, 31, 31, 0.801);
+}
+
+.content>button {
+    font-size: 1.4rem;
+    color: orangered;
+    background: none;
+    border: none;
+    display: flex;
+    padding: .6rem;
+    margin-top: .4rem;
+}
+
+.content>button:hover {
+    cursor: pointer;
+    color: orange;
+
+}
+
+.arrow {
+    height: 30px;
+    width: 20px;
+}
+
+.more>button {
+    border: none;
+    background-color: orangered;
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.more>button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 68, 0, 0.767);
+}
+
+.blog1 {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    transition: transform .9s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    0% {
+        margin-right: 5%;
+    }
+}
+
+
+.blog1:hover {
+    transform: scale(.98);
+}
+
+.blog1image>img {
+    width: 45vw;
+    height: 70vh;
+}
+
+.blog1content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    width: 45vw;
+}
+
+.blog1content>h1 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.blog1content>content {
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.blog1content>button {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    margin: 1.8rem;
+}
+
+.blog2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    margin-top: 6rem;
+    transition: transform .9s;
+    animation: fade;
+    animation-duration: 2s;
+}
+
+
+.blog2:hover {
+    transform: scale(1.04);
+}
+
+
+
+.blog2image>img {
+    width: 40vw;
+    height: 70vh;
+    margin-left: 2rem;
+}
+
+.blog2content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    width: 45vw;
+}
+
+.blog2content>h1 {
+    font-size: 2.6rem;
+}
+
+.blog2content>content {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 1rem;
+}
+
+.blog2content>button {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    margin: 1.8rem;
+}
+
+.other {
+    margin-top: 7rem;
+}
+
+.other>h1 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.otherproducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.otherproduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding: 1.6rem;
+    margin: 1rem;
+    transition: transform .9s;
+    border-radius: 10px;
+    box-shadow: 5px 4px 16px 5px rgba(0, 0, 0, 0.1);
+}
+
+.otherproduct:hover {
+    transform: scale(1.05);
+}
+
+.otherproductimage {
+    width: 20vw;
+    height: 42vh;
+}
+
+
+.otherproduct>h1 {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: rgba(32, 31, 31, 0.801);
+}
+
+.otherproduct>.price {
+    font-size: 1.6rem;
+    color: rgba(32, 31, 31, 0.801);
+}
+
+.otherproduct>button {
+    font-size: 1.4rem;
+    color: orangered;
+    background: none;
+    border: none;
+    display: flex;
+    padding: .6rem;
+    margin-top: .4rem;
+}
+
+.otherproduct>button:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    margin-top: 4rem;
+}
+
+.reviews>h1 {
+    font-size: 2.4rem;
+}
+
+.reviews>content {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.reviews>.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+    width: 40vw;
+}
+
+.userimg {
+    height: 50px;
+    width: 50px;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+
+.review>content {
+    text-align: center;
+}
+
+.review>.id {
+    margin-top: 3rem;
+    color: orangered;
+}
+
+.review>.id:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding: 4rem;
+    background-color: rgba(255, 68, 0, 0.842);
+    color: white;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.signup>h1 {
+    font-size: 2.4rem;
+    text-decoration: center;
+}
+
+
+.signup>input {
+    height: 8vh;
+    width: 40vw;
+    border: none;
+    margin-top: 2.6rem;
+}
+
+.signup>button {
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: none;
+    border: 1px solid white;
+}
+
+.signup>button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 68, 0, 0.747);
+}
+
+
+@media screen and (max-width: 768px),
+(max-width: 576px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        font-size: 8px;
+    }
+    .leftHeader {
+        margin-left: .2rem;
+    }
+    
+    .leftHeader>p {
+        padding-left: .4rem;
+    }
+    
+    .rightHeader {
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        margin-right: .2rem;
+    }
+
+    .rightHeader>img {
+        height: 10px;
+        width: 10px;
+        margin-right: 10px;
+    }
+
+    .leftnav {
+        font-size: 8px;
+    }
+
+    .rightnav {
+        font-size: 8px;
+    } .productimage {
+        width: 90%;
+    }
+    .page {
+        margin-right: .4rem;
+    }
+    .page > img{
+        height: 10px;
+        width: 10px;
+    }
+
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-content: center;
+    }
+
+    .blog2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog1image>img {
+        width: 80%;
+        margin-left: 10% ;
+    }
+    .blog2image>img {
+        width: 80%;
+    }
+
+    .blog1content>h1 {
+        font-size: 1.4rem;
+    }
+
+    .blog1content>content {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .blog2content>h1 {
+        font-size: 1.4rem;
+    }
+
+    .blog2content>content {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .otherproductimage{
+        width: 90%;
+    }
+
+    .reviews>content {
+        font-size: 1rem;
+    }
+
+    .review>content {
+        font-size: 10px;
+        margin: 10px;
+    }
+    .signup > input {
+        width: 90%;
+    }
+}
